@@ -5,23 +5,55 @@
 }
 
 body{
-  background-color: red;
+  background-color: #c41328;
 }
-h1{
+h1,
+h2{
   color: white;
   text-align: center;
   padding: 20px 0;
 }
-.form-dati{
-  width: 80%;
+.page-wrapper{
+  max-width: 1180px;
   height: 100px;
   margin:auto;
-  background-color: yellow;
-}
 
+}
+.form-dati{
+  padding: 15px;
+  border-radius:10px;
+  box-shadow: 2px 2px 5px #444;
+  background-color: #fff;
+}
+label{
+  margin-bottom: 15px;
+  color: #B91350;
+}
+input{
+  height:25px;
+  border-radius:5px;
+  border: 1px solid #B91350;
+}
+input::placeholder{
+  text-align:center;
+  font-size:12px;
+  padding:10px;
+  line-height:25px;
+}
+input:focus,
+select:focus{
+  background-color: #B91350;
+  color: white;
+}
+select{
+  height: 25px;
+  border: 1px solid #B91350;
+  font-size: 16px;
+}
 .row{
   display: flex;
   justify-content: center;
+  padding:20px;
 }
 
 .col{
@@ -31,5 +63,44 @@ h1{
   margin:20px;
 }
 .btn{
+  display:inline-block;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0, 0.3);
+  color: #B91350;
+  border: 1px solid grey;
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn:hover{
+  color:white;
+  background-color: grey;
+  cursor:pointer;
+}
+.biglietto{
+margin-top: 20px;
+}
+.biglietto-wrapper{
+  background-color: #fff;
+  padding:20px;
+  opacity:0;
+  transition: opacity 0.5s;
+}
+.dati{
+  display: flex;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.nome{
+  background-color: grey;
+  padding: 25px;
+}
+.offerta table th, .offerta table td{
+padding: 20px;
+ }
+
+.show{
+  opacity:1;
 }
