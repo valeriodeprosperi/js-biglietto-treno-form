@@ -31,11 +31,11 @@ var numCarrozza = Math.floor(Math.random()* 10);
 var codiceCp = Math.floor(Math.random()* 10000) * 90000;
 
 // stampare il nostro Biglietto
-document.getElementById("nome-passegero").innertHTML = nome;
-document.getElementById("offerta").innertHTML = tipoOfferta;
-document.getElementById("carrozza").innertHTML = numCarrozza;
-document.getElementById("codice-cp").innertHTML = codiceCp;
-document.getElementById("costo-biglietto").innertHTML = totale + "€";
+document.getElementById("nome-passegero").innerHTML = nome;
+document.getElementById("offerta").innerHTML = tipoOfferta;
+document.getElementById("carrozza").innerHTML = numCarrozza;
+document.getElementById("codice-cp").innerHTML = codiceCp;
+document.getElementById("costo-biglietto").innerHTML = totale + "€";
 
 
 document.getElementById("biglietto").classList.add("show");
